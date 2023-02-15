@@ -1,0 +1,318 @@
+{
+  "bytes": 79662,
+  "datahub": {
+    "created": "2018-08-21T21:19:55.046242",
+    "findability": "published",
+    "flowid": "machine-learning/glass/3",
+    "modified": "2018-09-06T13:25:04.333798",
+    "owner": "machine-learning",
+    "ownerid": "machine-learning"
+  },
+  "description": "The resources for this dataset can be found at https://www.openml.org/d/41\n\nAuthor:   \nSource: Unkno",
+  "hash": "6c5f71a1d1122c08773764da1f7f566a",
+  "id": "machine-learning/glass",
+  "licenses": [
+    {
+      "name": "ODC-PDDL",
+      "path": "http://opendatacommons.org/licenses/pddl/",
+      "title": "Open Data Commons Public Domain Dedication and License"
+    }
+  ],
+  "name": "glass",
+  "resources": [
+    {
+      "bytes": 17823,
+      "datahub": {
+        "type": "original"
+      },
+      "dpp:streamedFrom": "https://s3.amazonaws.com/rawstore.datahub.io/d38f2d5484e30ec447bbd8b6d3354460.arff",
+      "encoding": "ISO-8859-1",
+      "format": "arff",
+      "name": "glass_arff",
+      "path": "archive/glass_arff.arff",
+      "pathType": "local",
+      "profile": "data-resource"
+    },
+    {
+      "bytes": 13334,
+      "datahub": {
+        "type": "original"
+      },
+      "dialect": {
+        "delimiter": ",",
+        "quoteChar": "\""
+      },
+      "dpp:streamedFrom": "https://s3.amazonaws.com/rawstore.datahub.io/ada024df844ab75eca36edcef98eeafe.csv",
+      "encoding": "ISO-8859-1",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "name": "glass_original",
+      "path": "archive/glass.csv",
+      "pathType": "local",
+      "profile": "data-resource",
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "RI",
+            "type": "number"
+          },
+          {
+            "format": "default",
+            "name": "Na",
+            "type": "number"
+          },
+          {
+            "format": "default",
+            "name": "Mg",
+            "type": "number"
+          },
+          {
+            "format": "default",
+            "name": "Al",
+            "type": "number"
+          },
+          {
+            "format": "default",
+            "name": "Si",
+            "type": "number"
+          },
+          {
+            "format": "default",
+            "name": "K",
+            "type": "number"
+          },
+          {
+            "format": "default",
+            "name": "Ca",
+            "type": "number"
+          },
+          {
+            "format": "default",
+            "name": "Ba",
+            "type": "number"
+          },
+          {
+            "format": "default",
+            "name": "Fe",
+            "type": "any"
+          },
+          {
+            "format": "default",
+            "name": "Type",
+            "type": "string"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    },
+    {
+      "bytes": 693,
+      "datahub": {
+        "type": "derived/report"
+      },
+      "description": "Validation report for tabular data",
+      "dpp:streamedFrom": "/tmp/tmpdcgjwviv/machine-learning/glass/validation_report/data/9466485cb1aedaa9ec107d357fd9e700/validation_report.json",
+      "format": "json",
+      "hash": "9466485cb1aedaa9ec107d357fd9e700",
+      "name": "validation_report",
+      "path": "data/validation_report.json",
+      "profile": "data-resource"
+    },
+    {
+      "bytes": 13549,
+      "datahub": {
+        "derivedFrom": [
+          "glass"
+        ],
+        "type": "derived/csv"
+      },
+      "delimiter": ",",
+      "dialect": {
+        "delimiter": ",",
+        "doubleQuote": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "dpp:streamedFrom": "/tmp/tmpdcgjwviv/machine-learning/glass/glass_csv/data/ada024df844ab75eca36edcef98eeafe/glass_csv.csv",
+      "encoding": "utf-8",
+      "format": "csv",
+      "hash": "ada024df844ab75eca36edcef98eeafe",
+      "mediatype": "text/csv",
+      "name": "glass_csv",
+      "path": "data/glass_csv.csv",
+      "pathType": "local",
+      "profile": "data-resource",
+      "quotechar": "\"",
+      "rowcount": 214,
+      "schema": {
+        "fields": [
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "RI",
+            "type": "number"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "Na",
+            "type": "number"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "Mg",
+            "type": "number"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "Al",
+            "type": "number"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "Si",
+            "type": "number"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "K",
+            "type": "number"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "Ca",
+            "type": "number"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "Ba",
+            "type": "number"
+          },
+          {
+            "format": "default",
+            "name": "Fe",
+            "type": "any"
+          },
+          {
+            "format": "default",
+            "name": "Type",
+            "type": "string"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      },
+      "signed": true
+    },
+    {
+      "bytes": 30090,
+      "datahub": {
+        "derivedFrom": [
+          "glass"
+        ],
+        "type": "derived/json"
+      },
+      "delimiter": ",",
+      "dialect": {
+        "delimiter": ",",
+        "quoteChar": "\""
+      },
+      "dpp:streamedFrom": "/tmp/tmpdcgjwviv/machine-learning/glass/glass_json/data/fc1a0e26e9f16393680fcf32eefa8230/glass_json.json",
+      "encoding": "utf-8",
+      "format": "json",
+      "hash": "fc1a0e26e9f16393680fcf32eefa8230",
+      "mediatype": "text/csv",
+      "name": "glass_json",
+      "path": "data/glass_json.json",
+      "pathType": "local",
+      "profile": "data-resource",
+      "quotechar": "\"",
+      "rowcount": 214,
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "RI",
+            "type": "number"
+          },
+          {
+            "format": "default",
+            "name": "Na",
+            "type": "number"
+          },
+          {
+            "format": "default",
+            "name": "Mg",
+            "type": "number"
+          },
+          {
+            "format": "default",
+            "name": "Al",
+            "type": "number"
+          },
+          {
+            "format": "default",
+            "name": "Si",
+            "type": "number"
+          },
+          {
+            "format": "default",
+            "name": "K",
+            "type": "number"
+          },
+          {
+            "format": "default",
+            "name": "Ca",
+            "type": "number"
+          },
+          {
+            "format": "default",
+            "name": "Ba",
+            "type": "number"
+          },
+          {
+            "format": "default",
+            "name": "Fe",
+            "type": "any"
+          },
+          {
+            "format": "default",
+            "name": "Type",
+            "type": "string"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      },
+      "signed": true
+    },
+    {
+      "bytes": 4173,
+      "dpp:streamedFrom": "/tmp/tmp5ceyng6u/README.md",
+      "format": "md",
+      "name": "readme",
+      "path": "README.md"
+    }
+  ],
+  "title": "Glass"
+}
